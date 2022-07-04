@@ -11,12 +11,14 @@ const app = new Vue(
             imgUser : '', 
             //creo gli elementi da inserire nel post
             imgUserProfilePic :'',
-            userName : ''
+            userName : '',
+            visibility : 'd-none'
         },
         methods : {
             userProfile : function(){
                 this.imgUserProfilePic = this.imgUser ;
                 this.userName = `${this.firstName} ${this.lastName}`;
+                this.visibility = 'd-block'
             }
         },
 

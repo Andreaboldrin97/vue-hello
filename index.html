@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="root">
+        <h1 class="text-center"> Crea il tuo post</h1>
         <div class="row g-2">
             <div class="col-md m-4">
               <div class="form-floating m-2 d-flex justify-content-around">
@@ -24,7 +25,7 @@
               </div>
             </div> 
         </div>
-        <div id="container" class="posts-list">
+        <div id="container" class="posts-list " :class="visibility">
             <div class="post">
                 <div class="post__header">
                     <div class="post-meta">
